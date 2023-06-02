@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    padding-top: 0vw;
+    width: 100vw;
+    height: 100vh;
+}
+.nav{
+
+    padding: 1em;
+    background-color: black;
+    color: white;
+}
+.nav-ul{
+    justify-content: end;
+    display: flex;
+    list-style-type: none;
+    color: white;
+}
+.nav-ul li{
+    margin: 0 0.8em;
+}
+.button{
+    color: white;
+    text-decoration: none;
+    font-family: 'Trispace', sans-serif;
+}
+.loginbutton{
+    opacity: 0.6;
+    transition: padding 0.3s;
+    border-radius: 5px;
+    box-shadow: 0px;
+    padding: 0.8em;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-family: 'Trispace', sans-serif;
+}
+.loginbutton:hover{
+    padding: 0.9em;
+    opacity: 1;
+    box-shadow: 0 0 3px #39ff14;
+}
