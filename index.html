@@ -2,30 +2,91 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
-      </style>
-    <title>LandingPage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap');
+  </style>
+  <title>LandingPage</title>
+
 </head>
 
 <body>
-    <header class="cabecalho">
-        <nav class="nav">
-            <ul class="nav-ul">
-                <li><a href="" class="button">Inicial</a></li>
-                <li><a href="" class="button">Contatos</a></li>
-                <li><a href="" class="button">Suporte</a></li>
-                <li><a href="" class="loginbutton">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="cabecalho">
+    <img class="cabecalho-imagem" src="img/logoastro.png" alt="Logo">
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li><a href="index.html" class="button">Home</a></li>
+        <li><a href="" class="button">Formulário</a></li>
+        <li><a href="" class="button">Sobre</a></li>
+        <li><a href="" class="loginbutton">ENTRAR</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section></section>
+  <main class="conteudo">
+    <section class="conteudo-principal">
+      <div float class="conteudo-principal-escrito">
+        <h2 class="titulo">Viagem ao Espaço - Descobrindo as Fronteiras do Universo</h2>
+        <p class="apresentacao"> Bem-vindos, ladies and gentlemen! Hoje, embarcaremos em uma emocionante jornada rumo às
+          estrelas, explorando as maravilhas do espaço sideral. Preparem-se para descobrir as fronteiras do universo em
+          nossa viagem ao espaço!</p>
+        <button class="ler-mais">Leia Mais</button>
 
-    <footer></footer>
+        <p class="conteudo-escondido">O universo é um vasto e misterioso lugar, cheio de planetas, estrelas, galáxias e
+          muito mais. No entanto, o ser humano sempre ansiou por explorar além das fronteiras terrestres, buscando
+          respostas para as grandes perguntas sobre nossa existência.
+          A exploração espacial teve seu início com a corrida espacial entre os Estados Unidos e a União Soviética
+          durante a Guerra Fria. Em 1969, a missão Apollo 11 alcançou a Lua, marcando um marco histórico na exploração
+          espacial. <br>
+          Desde então, as missões tripuladas evoluíram, com astronautas realizando caminhadas espaciais, construindo
+          estações espaciais, como a Estação Espacial Internacional, e realizando pesquisas científicas em ambiente de
+          microgravidade.
+          Viajar ao espaço apresenta inúmeros desafios técnicos e físicos. A falta de gravidade, a radiação cósmica, a
+          necessidade de sistemas de suporte de vida e a logística são apenas algumas das dificuldades a serem
+          superadas. <br>
+          Atualmente, vivemos uma nova era emocionante da exploração espacial. Empresas privadas, como a SpaceX, estão
+          revolucionando a indústria aeroespacial, desenvolvendo foguetes reutilizáveis e tornando as viagens espaciais
+          mais acessíveis.
+          Um dos objetivos mais ambiciosos é a viagem a Marte. <br> 
+          A NASA e outras agências espaciais estão trabalhando em
+          missões tripuladas ao Planeta Vermelho, visando aprofundar nossa compreensão sobre a possibilidade de vida
+          extraterrestre e expandir nossos horizontes.
+          Além do nosso sistema solar, a exploração espacial tem como objetivo alcançar as estrelas mais distantes.
+          Projetos como a sonda Voyager, lançada em 1977, já estão se aventurando no espaço interestelar, transmitindo
+          informações valiosas sobre o universo. <br>
+          A viagem ao espaço não apenas amplia nossos conhecimentos científicos, mas também tem um impacto significativo
+          em nossa sociedade. Tecnologias desenvolvidas para a exploração espacial são aplicadas em diversas áreas, como
+          comunicações, medicina e transporte.
+          O futuro da exploração espacial é promissor. Com o avanço da tecnologia, veremos a realização de missões mais
+          ousadas, a colonização de outros planetas e a busca por vida extraterrestre. Estamos apenas começando a
+          desvendar os segredos do universo. <br>
+          A viagem ao espaço é uma jornada fascinante que nos permite vislumbrar a grandeza e a diversidade do universo.
+          Ela nos desafia a expandir nossos limites, a buscar respostas e a nos maravilhar com as maravilhas cósmicas.
+          Então, vamos juntos, explorar as fronteiras do universo! Obrigado!</p>
+      </div>
+      <button class="ler-menos">Leia Menos</button>
+      <script>
+        const botaoLerMais = document.querySelector('.ler-mais');
+        const botaoLerMenos = document.querySelector('.ler-menos');
+        const conteudoEscondido = document.querySelector('.conteudo-escondido');
+        
+  
+        botaoLerMais.addEventListener('click', function () {
+          conteudoEscondido.style.display = 'block';
+          botaoLerMais.style.display = 'none';
+          botaoLerMenos.style.display = 'block';
+        });
+        botaoLerMenos.addEventListener('click', function () {
+          conteudoEscondido.style.display = 'none';
+          botaoLerMais.style.display = 'block';
+          botaoLerMenos.style.display = 'none';
+        });
+      </script>
+    </section>
+    
+
 </body>
 
 </html>
