@@ -1,12 +1,15 @@
 /* Tela Inicial */
 
 body {
+    animation: fadeIn 1.4s;
     background-image: url(img/galaxia-noturna.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
-    overflow-y: scroll;
 }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 .cabecalho {
     display: flex;
